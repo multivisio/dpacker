@@ -1,8 +1,11 @@
 {
   "name": "@multivisio/webpacker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
-  "files": ["webpack.config.js", "webpack.env.js"],
+  "files": [
+    "webpack.config.js",
+    "webpack.env.js"
+  ],
   "author": "",
   "license": "ISC",
   "publishConfig": {
