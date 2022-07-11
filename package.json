@@ -4,7 +4,8 @@
   "main": "index.js",
   "files": [
     "webpack.config.js",
-    "webpack.env.js"
+    "webpack.env.js",
+    "/configuration/"
   ],
   "author": "",
   "license": "ISC",
