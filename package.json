@@ -1,6 +1,6 @@
 {
-  "name": "@multivisio/webpacker2",
-  "version": "1.0.7",
+  "name": "@multivisio/webpacker",
+  "version": "1.0.8",
   "main": "index.js",
   "files": [
     "webpack.config.js",
@@ -62,7 +62,7 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
-    "postinstall": "nodemon postinstall.js"
+    "postinstall": "node ./postinstall.js"
   },
   "target": "web",
   "repository": {
