@@ -62,7 +62,7 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
-    "postinstall": "nodemon eintest.js"
+    "postinstall": "nodemon postinstall.js"
   },
   "target": "web",
   "repository": {
