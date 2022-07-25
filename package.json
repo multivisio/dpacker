@@ -36,6 +36,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^10.0.1",
     "mini-css-extract-plugin": "^2.4.4",
+    "nodemon": "^2.0.19",
     "postcss": "^8.3.11",
     "postcss-loader": "^6.2.0",
     "sass": "^1.50.1",
@@ -61,7 +62,7 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
-    "postinstall": "postinstall.js"
+    "postinstall": "nodemon eintest.js"
   },
   "target": "web",
   "repository": {
