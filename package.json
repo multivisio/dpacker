@@ -5,7 +5,8 @@
   "files": [
     "webpack.config.js",
     "webpack.env.js",
-    "/configuration/"
+    "configuration/webpack.dev.config.js",
+    "configuration/webpack.prod.config.js",
   ],
   "author": "",
   "license": "ISC",
@@ -59,7 +60,8 @@
     "production": "webpack --config configuration/webpack.prod.config.js --mode=production",
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
-    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
+    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
+    "postinstall": "console.log(\"Test\")",
   },
   "target": "web",
   "repository": {
