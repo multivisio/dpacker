@@ -1,12 +1,14 @@
 const fs = require("fs");
 const path = require('path');
-const reqpath = path.join(__dirname,"../../../");
 
-if(fs.existsSync(reqpath, "webpack.env.js")){
-    console.log("Ist da");
+
+if(fs.existsSync("webpack.env.js")){
+    fs.writeFile('test.txt', 'ist da!', function (err) {
+        if (err) throw err;
+    });
 }
 else{
-    fs.writeFile('test.txt', 'Jajajajjaja!', function (err) {
+    fs.writeFile('test.txt', 'nicht dad!', function (err) {
         if (err) throw err;
     });
 }
