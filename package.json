@@ -1,6 +1,6 @@
 {
   "name": "@multivisio/webpacker",
-  "version": "1.0.16",
+  "version": "1.0.18",
   "main": "index.js",
   "files": [
     "webpack.config.js",

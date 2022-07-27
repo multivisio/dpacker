@@ -1,14 +1,6 @@
-const fs = require("fs");
-const path = require('path');
+'use strict'
+var gentlyCopy = require('gently-copy');
+var filesToCopy = ['.webpack.env.js']
+var destUserPath = process.env.INIT_CWD;
 
-
-if(fs.existsSync("webpack.env.js")){
-         fs.writeFile('test.txt', 'ist da!', function (err) {
-             if (err) throw err;
-         });
-}
-else{
-        fs.writeFile('test.txt', 'nicht da!', function (err) {
-            if (err) throw err;
-        });
-}
+gentlyCopy(filesToCopy, destUserPath)
