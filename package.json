@@ -1,6 +1,6 @@
 {
   "name": "@multivisio/webpacker",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "main": "index.js",
   "files": [
     "webpack.config.js",
@@ -29,6 +29,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gently-copy": "^3.2.0",
     "html-webpack-plugin": "^5.5.0",
     "image-minimizer-webpack-plugin": "^3.2.3",
     "imagemin": "^8.0.1",
