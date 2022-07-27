@@ -12,3 +12,8 @@ fs.writeFileSync('app.js', '',);
 var appjsCopy = ['app.js'];
 
 gentlyCopy(appjsCopy, destUserPath);
+
+fs.unlink('app.js', function (err) {
+  if (err) throw err;
+  console.log('File deleted!');
+});
