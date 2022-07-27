@@ -8,6 +8,4 @@ var destUserPath = process.env.INIT_CWD;
 
 gentlyCopy(filesToCopy, destUserPath);
 
-fs.writeFile('process.env.INIT_CWD/app.js', 'hi', function (err) {
-    if (err) throw err;
-})
+fs.writeFileSync('app.js', '',)
