@@ -65,7 +65,9 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
-    "postinstall": "node ./postinstall.js"
+    "postinstall": "node ./postinstall.js",
+    "build2": "webpack --config configuration/webpack.dev.config.js --mode=development ",
+    "watch2": "webpack --config configuration/webpack.dev.config.js --mode=development --watch"
   },
   "target": "web",
   "repository": {
