@@ -1,6 +1,6 @@
 {
   "name": "@multivisio/webpacker",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "main": "index.js",
   "files": [
     "app.js",
@@ -58,13 +58,6 @@
     "node": ">=14"
   },
   "scripts": {
-    "build": "webpack --config configuration/webpack.dev.config.js --mode=development",
-    "watch": "webpack --config configuration/webpack.dev.config.js --mode=development --watch",
-    "bundle": "npm install && npm run watch",
-    "production": "webpack --config configuration/webpack.prod.config.js --mode=production",
-    "lint:sass": "sass-lint -v -q",
-    "lint:js": "eslint --ext .js src/js/",
-    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
     "postinstall": "node ./postinstall.js"
   },
   "target": "web",
