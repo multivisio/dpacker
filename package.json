@@ -1,6 +1,6 @@
 {
   "name": "@multivisio/webpacker",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "main": "index.js",
   "files": [
     "app.js",
