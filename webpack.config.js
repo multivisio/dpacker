@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpackEnv = require('./webpack.env');
+const webpackEnv = require(process.env.INIT_CWD + '/webpack.env');
 
 module.exports = {
   entry: webpackEnv.entry,
