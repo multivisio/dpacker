@@ -1,8 +1,9 @@
 {
   "name": "@multivisio/dpacker",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "files": [
+    "docker-compose.livereload.yaml",
     "app.js",
     "webpack.config.js",
     "webpack.env.js",
