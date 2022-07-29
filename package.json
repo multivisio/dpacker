@@ -1,6 +1,6 @@
 {
   "name": "@multivisio/dpacker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "files": [
     "app.js",
