@@ -1,0 +1,8 @@
+version: '3.6'
+services:
+  web:
+    ports:
+      - "35729"
+    environment:
+      HTTP_EXPOSE: ${DDEV_ROUTER_HTTP_PORT}:80,${DDEV_MAILHOG_PORT}:8025,35730:35729
+      HTTPS_EXPOSE: ${DDEV_ROUTER_HTTPS_PORT}:80,${DDEV_MAILHOG_HTTPS_PORT}:8025,35729:35729
