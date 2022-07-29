@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const { merge } = require('webpack-merge')
 
-const webpackConfiguration = require('../webpack.config')
+const webpackConfiguration = require('webpack.config')
 const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = merge(webpackConfiguration, {

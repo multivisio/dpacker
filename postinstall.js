@@ -16,19 +16,19 @@ if (!json.hasOwnProperty("scripts")) {
 if (!json.scripts.hasOwnProperty("build")) {
   json.scripts.build =
     "webpack --config " +
-    "node_modules/@multivisio/webpacker/configuration/webpack.prod.config.js --mode=production";
+    "node_modules/@multivisio/dpacker/configuration/webpack.prod.config.js --mode=production";
 }
 
 if (!json.scripts.hasOwnProperty("watch")) {
   json.scripts.watch =
     "webpack --config " +
-    "node_modules/@multivisio/webpacker/configuration/webpack.dev.config.js --mode=development --watch";
+    "node_modules/@multivisio/dpacker/configuration/webpack.dev.config.js --mode=development --watch";
 }
 
 if (!json.scripts.hasOwnProperty("dev")) {
   json.scripts.dev =
     "webpack --config " +
-    "node_modules/@multivisio/webpacker/configuration/webpack.dev.config.js --mode=development";
+    "node_modules/@multivisio/dpacker/configuration/webpack.dev.config.js --mode=development";
 }
 
 fs.writeFileSync(process.env.INIT_CWD + "/package.json", JSON.stringify(json, null, 2));

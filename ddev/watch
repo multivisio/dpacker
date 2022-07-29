@@ -1,0 +1,2 @@
+#!/bin/bash
+ddev exec --dir /var/www/html/packages/mvcore/Build npm run watch

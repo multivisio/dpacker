@@ -3,13 +3,14 @@
   "version": "1.0.2",
   "main": "index.js",
   "files": [
-    "docker-compose.livereload.yaml",
     "app.js",
-    "webpack.config.js",
     "webpack.env.js",
     "postinstall.js",
+    "configuration/webpack.config.js",
     "configuration/webpack.dev.config.js",
-    "configuration/webpack.prod.config.js"
+    "configuration/webpack.prod.config.js",
+    "ddev/docker-compose.livereload.yaml",
+    "ddev/watch"
   ],
   "author": "",
   "license": "ISC",
@@ -67,8 +68,8 @@
     "url": "git+https://github.com/multivisio/dpacker.git"
   },
   "bugs": {
-    "url": "https://github.com/multivisio/webpacker/issues"
+    "url": "https://github.com/multivisio/dpacker/issues"
   },
-  "homepage": "https://github.com/multivisio/webpacker#readme",
+  "homepage": "https://github.com/multivisio/dpacker#readme",
   "description": ""
 }

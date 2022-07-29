@@ -12,7 +12,7 @@ module.exports = {
   entry: webpackEnv.entry,
   stats: 'errors-warnings',
   output: {
-    filename: 'JavaScript/[name].js',
+    filename: webpackEnv.files.name.javascript,
     path: webpackEnv.paths.output,
   },
   module: {
@@ -39,7 +39,7 @@ module.exports = {
           },
         },
         generator: {
-          filename: 'Images/[name][ext]',
+          filename: webpackEnv.files.name.image,
         },
       },
       {
@@ -51,14 +51,14 @@ module.exports = {
           },
         },
         generator: {
-          filename: 'Fonts/[name][ext]',
+          filename: webpackEnv.files.name.font,
         },
       },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'Css/[name].css',
+      filename: webpackEnv.files.name.css,
     }),
   ],
 
